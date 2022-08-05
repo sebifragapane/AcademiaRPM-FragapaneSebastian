@@ -144,7 +144,10 @@ form label{
     border:2px;
     border-radius: 10px;
     background-color: #2d656e;
-
+}
+.botonFrom:hover{
+    background-color: #6498a0;
+    color: black;
 }
 /* Sedes ----------------------------*/
 .sedes div img{
