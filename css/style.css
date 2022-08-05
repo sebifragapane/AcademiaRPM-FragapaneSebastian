@@ -106,6 +106,11 @@ h1{
     font-size: 1.7em;
     text-align: center; 
 }
+.planes a:hover{
+    height: 350px;
+    width: 125%;
+    transition: all .5s;
+}
 .plan  p{
     text-align: center;
     vertical-align: middle;
@@ -145,9 +150,11 @@ form label{
     border-radius: 10px;
     background-color: #2d656e;
 }
-.botonFrom:hover{
-    background-color: #6498a0;
-    color: black;
+.botonForm:hover{
+    background-color: #0c2f35;
+    color: #ffffff;
+    transition: all .5s;
+    
 }
 /* Sedes ----------------------------*/
 .sedes div img{
