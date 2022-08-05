@@ -1,0 +1,175 @@
+*{    
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Lalezar', cursive;
+}
+
+.navegador{
+    display: grid;
+    grid-template-columns: repeat(6,1fr); 
+    text-align: center;   
+}
+ .logo{
+    width: 100%;
+ }
+
+.navItem{
+    display: grid;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    font-size: 1.2em;   
+}
+.navItem div{
+    
+}
+.navItem:hover{   
+    color:white;
+    background-color: black;
+}
+
+ 
+.slider{
+    background-image: url("../imagenes/alumnes.jpg");
+    background-size: cover;
+    background-position:0px -100px;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: auto;
+}
+h1{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+    font-family: 'Oleo Script', cursive;
+    background-color: antiquewhite;
+    
+
+}
+.alumnos{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    align-items: center;
+    margin: 0px 2%;
+}
+
+.alumnos img{    
+    height: 250px;
+    width: 90%;
+}
+.filtro{
+    background-color: rgba(195, 233, 91, 0.589);
+}
+.planes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    justify-items: center; 
+    margin: 0 10%;
+    column-gap:5rem;  
+}
+
+.planes a{
+    
+    display: grid;
+    height: 300px;
+    width: 100%;
+    margin: 50px 0px; 
+    
+    align-items: center;
+    
+    
+    background: url("../imagenes/libros.png");    
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position:center;   
+}
+
+.planes a{
+
+    text-decoration: none;
+    color:rgb(22, 17, 17);
+    font-size: 1.7em;
+    text-align: center;  
+} 
+
+.plan  p{
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(175, 127, 68, 0.63);
+    
+}
+
+.contacto p{
+    text-align: center;
+}
+
+.contacto h2{
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;      
+}
+
+form{
+    width: 300px;
+    margin: 15px auto;
+}
+form label{
+    display:block;
+}
+
+input{
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+footer{
+    background-color: rgb(29, 28, 28);
+    display: inline-block;
+    width: 100%;
+}
+
+footer a{
+    text-decoration: none;
+    color: wheat;
+    
+    
+}
+footer ul{
+    float:left;
+}
+.redes{
+    float: right;
+   
+}
+
+.redes a{
+    padding: 10px;
+   
+}
+
+.sedes{
+    display:inline-flex;   
+    margin: 7% 0 ;
+}
+
+.sedes div{
+    width: 30%;
+    
+    display: inline-block;
+    margin:auto
+}
+
+.sedes div img{
+    width: 100%;
+}
+
+.metodos div img {
+    display: inline-block;
+}
+.metodos div p {
+    display: inline-block;
+}
