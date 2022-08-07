@@ -191,15 +191,27 @@ form label{
 }
 
 /* Métodos --------------------------*/
+.metodosMain p {
+    font-size: .9em;
+    width: 80%;
+    margin: 10px auto;
+    
+}
+
 .banner{
     display: none;
 }
 .metodos{
     display: grid;
+    
 }
 .metodos img {
     width: 100%;
     height: 250px;
+}
+.metodos p {
+    padding:10px;
+    
 }
 
 /* Sobre Nosotros -------------------*/
