@@ -7,18 +7,19 @@
 /* Navegador -------------------*/
 nav{
     background-color:#5f7165;
-    height: 80px;
+    height: 90px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 #check{
     display:none;
 } 
 .logo{
-    height: 80px;   
+    height: 90px;   
     padding: 5px;
 }
 label{
@@ -34,6 +35,7 @@ nav ul{
     left: -100%;
     text-align: center;
     transition: all .5s;
+    z-index: 100;
        
 }
 .checkBtn{
@@ -57,28 +59,27 @@ nav ul li a:hover{
 h1{
     text-align: center;
     padding: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 25px;
     font-family: 'Oleo Script', cursive;
     color: #103a41;
     background-color: #F6E3C5;    
 }
 
-.slider{
-    background-image: url("../imagenes/alumnes.jpg");
-    background-size: cover;
-    background-position:0px -100px;
-    background-repeat: no-repeat;
-    height: 200px;
-    width: auto;
+
+.sliderCss img{    
+    height: 600px;
+}
+.sliderCaption2{
+    margin-bottom: 170px;
 }
 .alumnos div{
-    display:grid;
+    
     text-align: center;
     margin-top: 100px;
 }
 .alumnos img{    
     height: 250px;
-    width: 100%;
+    
    
 }
 .planes{
@@ -272,14 +273,18 @@ footer a{
         display: none;
     }
 
+    nav{
+        align-items:center;  
+    }
     nav ul{
         position:relative;
         left:0%;
         top:0%;
-        height: 80px;
+        height: 90px;
         background-color: rgba(255, 255, 255, 0);
         list-style: none;   
-        text-align: center;   
+        text-align: center;
+        margin:0px;
     }
     nav ul li{
         display: inline-block;
