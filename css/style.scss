@@ -143,7 +143,7 @@ p {
 }
 
 form{
-    
+
     width: 60%;
     margin: 15px auto;
 
@@ -167,77 +167,72 @@ form{
     }
 }
 /* Sedes ----------------------------*/
-.sedes div img{
-    width: 90%;
-}
-.info{
-    display: grid;
-    justify-items: center;
-    padding:50px 0 ;
-    text-align: center;
-}
-.info img{
-    height: 300px;
-    width: 100%;
-    border-radius: 15px;
-}
+.sedes{
+    .info {
+        display: grid;
+        justify-items: center;
+        padding:50px 0 ;
+        text-align: center;
 
-.info p i{
-    margin-right: 15px;
-}
-.info a i{
-    margin-right: 15px;
-}
-
-.info button{
-    margin-top: 15px;
-    width: 30%;
-    border:2px;
-    border-radius: 5px;
-    background-color: #000000;
-    color:rgb(255, 255, 255);
-    
-
+        img{
+            width: 90%;
+            height: 300px;
+            border-radius: 15px;
+        }
+        p i{
+            margin-right: 15px;
+        }
+        button{
+            margin-top: 15px;
+            width: 30%;
+            border:2px;
+            border-radius: 5px;
+            background-color: #000000;
+            color:rgb(255, 255, 255);
+        }
+    }       
 }
 
 /* Métodos --------------------------*/
-.metodosMain p {
+.metodosMain {
+
+    p{ 
     font-size: .9em;
     width: 80%;
     margin: 10px auto;
+    }
+    .metodosText{
+        padding:25px ;
+        border-bottom: 1px solid rgb(119, 115, 115);
+        text-align: center;
+    }
     
-    
-}
-.metodosText{
-    padding:25px ;
-    border-bottom: 1px solid rgb(119, 115, 115);
-    text-align: center;
-}
+    .banner{
+        display: none;
+    }
+    .metodos{
+        display: grid;
+        margin-top:50px;
+        margin-bottom: 60px;
 
-.banner{
-    display: none;
-}
-.metodos{
-    display: grid;
-    margin-top:50px;
-    margin-bottom: 60px;
-}
-.metodos img {
-    width: 100%;
-    height: 250px;
-}
-.metodos div{
-    margin: 10px 30px;
-    border-bottom: 1px solid rgb(119, 115, 115);
-}
-.metodos div h2{
-    text-align: center;
-    
-}
-.metodos p {
-    padding:10px;
-    background-color: #f7ead6de;
-    
+        img {
+            width: 100%;
+            height: 250px;
+        }
+
+        div{
+            margin: 10px 30px;
+            border-bottom: 1px solid rgb(119, 115, 115);
+
+            h2{
+                text-align: center;  
+            }
+        }
+        p{
+            padding:10px;
+            background-color: #f7ead6de;
+        }
+    }    
 }
 
 /* Sobre Nosotros -------------------*/
@@ -256,42 +251,48 @@ footer{
     grid-template-rows: 1fr 1fr;  
     justify-content: center; 
     text-align: center;
-}
-footer ul{
-    list-style: none;
-}
-.redes a{
-    text-decoration: none;   
-    color: $colorCream;    
-}
-.redes{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    text-align: center;
-    font-size: 2em;
-}
-.insta:hover{
-    color: rgb(243, 159, 50);
-    transition: all .5s;
-}
-.face:hover{
-    color: rgb(68, 134, 255);
+
+    ul{
+        list-style: none;
+    }
+    .redes{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        text-align: center;
+        font-size: 2em;
+        a{
+            text-decoration: none;   
+            color: $colorCream;
+            
+            .insta:hover{
+                color: rgb(243, 159, 50);
+                transition: all .5s;
+            }
+            .face:hover{
+                color: rgb(68, 134, 255);
+                
+                transition: all .5s;
+            }
+            .twit:hover{
+                color: hwb(184 13% 23%);
+                transition: all .5s;
+            }
+        }
+    }
+    .navFooter{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        text-decoration: none;
+        color:$colorCream;
+
+        .aFooterColor{
+            color:$colorCream;
+        }
+    }
     
-    transition: all .5s;
-}
-.twit:hover{
-    color: hwb(184 13% 23%);
-    transition: all .5s;
-}
-.navFooter{
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    text-decoration: none;
-    color:$colorCream;
-}
-.aFooterColor{
-    color:$colorCream;
-}
+} 
+
+
 
 
 @media screen and (min-width:820px) {

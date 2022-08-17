@@ -161,32 +161,21 @@ form .botonForm:hover {
 }
 
 /* Sedes ----------------------------*/
-.sedes div img {
-  width: 90%;
-}
-
-.info {
+.sedes .info {
   display: grid;
   justify-items: center;
   padding: 50px 0;
   text-align: center;
 }
-
-.info img {
+.sedes .info img {
+  width: 90%;
   height: 300px;
-  width: 100%;
   border-radius: 15px;
 }
-
-.info p i {
+.sedes .info p i {
   margin-right: 15px;
 }
-
-.info a i {
-  margin-right: 15px;
-}
-
-.info button {
+.sedes .info button {
   margin-top: 15px;
   width: 30%;
   border: 2px;
@@ -201,38 +190,31 @@ form .botonForm:hover {
   width: 80%;
   margin: 10px auto;
 }
-
-.metodosText {
+.metodosMain .metodosText {
   padding: 25px;
   border-bottom: 1px solid rgb(119, 115, 115);
   text-align: center;
 }
-
-.banner {
+.metodosMain .banner {
   display: none;
 }
-
-.metodos {
+.metodosMain .metodos {
   display: grid;
   margin-top: 50px;
   margin-bottom: 60px;
 }
-
-.metodos img {
+.metodosMain .metodos img {
   width: 100%;
   height: 250px;
 }
-
-.metodos div {
+.metodosMain .metodos div {
   margin: 10px 30px;
   border-bottom: 1px solid rgb(119, 115, 115);
 }
-
-.metodos div h2 {
+.metodosMain .metodos div h2 {
   text-align: center;
 }
-
-.metodos p {
+.metodosMain .metodos p {
   padding: 10px;
   background-color: rgba(247, 234, 214, 0.8705882353);
 }
@@ -256,46 +238,38 @@ footer {
   justify-content: center;
   text-align: center;
 }
-
 footer ul {
   list-style: none;
 }
-
-.redes a {
-  text-decoration: none;
-  color: #F6E3C5;
-}
-
-.redes {
+footer .redes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
   font-size: 2em;
 }
-
-.insta:hover {
+footer .redes a {
+  text-decoration: none;
+  color: #F6E3C5;
+}
+footer .redes a .insta:hover {
   color: rgb(243, 159, 50);
   transition: all 0.5s;
 }
-
-.face:hover {
+footer .redes a .face:hover {
   color: rgb(68, 134, 255);
   transition: all 0.5s;
 }
-
-.twit:hover {
+footer .redes a .twit:hover {
   color: hwb(184 13% 23%);
   transition: all 0.5s;
 }
-
-.navFooter {
+footer .navFooter {
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-decoration: none;
   color: #F6E3C5;
 }
-
-.aFooterColor {
+footer .navFooter .aFooterColor {
   color: #F6E3C5;
 }
 
