@@ -1,0 +1,460 @@
+$colorCream:#F6E3C5;
+$clorGreen:#5f7165;
+
+*{    
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Lalezar', cursive;
+}
+/* Navegador -------------------*/
+nav{
+    background-color:#5f7165;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul{
+        padding-top:10px;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(9, 6, 12);
+        list-style: none;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 100;
+        a{
+            text-decoration: none;
+            color: $colorCream;
+            line-height: 45px;
+            padding: 10px;
+        }
+        a:hover{
+            background-color: white;
+            color: black;
+            text-decoration: none;
+        }          
+    }   
+}
+
+#check{
+    display:none;
+} 
+.logo{
+    height: 90px;   
+    padding: 5px;
+}
+label{
+    font-size: 30px;
+}
+.checkBtn{
+    margin: 0 30px;
+}
+
+
+#check:checked ~ ul  {
+   left: 0%;   
+}
+/* Index -------------------*/
+h1{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 25px;
+    font-family: 'Oleo Script', cursive;
+    color: #103a41;
+    background-color:$colorCream;    
+}
+p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.sliderCss img{    
+    height: 600px;
+}
+.sliderCaption2{
+    margin-bottom: 170px;
+}
+.alumnos{
+    div{
+        text-align: center;
+        margin-top: 100px;       
+    }
+    img{    
+        height: 250px;   
+    } 
+}
+.planes{
+    display: grid; 
+    justify-items: center; 
+    margin: 0 20%;
+    column-gap:5rem;
+    a{
+    
+        display: grid;
+        height: 300px;
+        width: 80%;
+        margin: 50px 0;     
+        align-items: center;
+          
+        background: url("../imagenes/libros.png");    
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position:center;   
+    
+        text-decoration: none;
+        color:rgb(22, 17, 17);
+        font-size: 1.7em;
+        text-align: center; 
+    }
+    a:hover{
+        height: 350px;
+        width: 125%;
+        transition: all .5s;
+    }
+    .plan{  
+        p{
+        text-align: center;
+        vertical-align: middle;
+        background-color: rgba(175, 127, 68, 0.63);    
+        }
+    }           
+}
+
+.contacto{
+    p{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+        font-size: 2em;
+        padding: 10px;
+    }
+    input{
+        display: block;
+        height: 40px;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}
+
+form{
+    
+    width: 60%;
+    margin: 15px auto;
+
+    label{
+        text-align: center;
+        font-size: 1.2em;
+        display:block;
+    }
+    .botonForm{
+        height: 50px;
+        font-size: 1em;
+        border:2px;
+        border-radius: 10px;
+        background-color: #2d656e;
+    }
+    .botonForm:hover{
+        background-color: #0c2f35;
+        color: #ffffff;
+        transition: all .5s;
+    
+    }
+}
+/* Sedes ----------------------------*/
+.sedes div img{
+    width: 90%;
+}
+.info{
+    display: grid;
+    justify-items: center;
+    padding:50px 0 ;
+    text-align: center;
+}
+.info img{
+    height: 300px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.info p i{
+    margin-right: 15px;
+}
+.info a i{
+    margin-right: 15px;
+}
+
+.info button{
+    margin-top: 15px;
+    width: 30%;
+    border:2px;
+    border-radius: 5px;
+    background-color: #000000;
+    color:rgb(255, 255, 255);
+    
+
+}
+
+/* Métodos --------------------------*/
+.metodosMain p {
+    font-size: .9em;
+    width: 80%;
+    margin: 10px auto;
+    
+    
+}
+.metodosText{
+    padding:25px ;
+    border-bottom: 1px solid rgb(119, 115, 115);
+    text-align: center;
+}
+
+.banner{
+    display: none;
+}
+.metodos{
+    display: grid;
+    margin-top:50px;
+    margin-bottom: 60px;
+}
+.metodos img {
+    width: 100%;
+    height: 250px;
+}
+.metodos div{
+    margin: 10px 30px;
+    border-bottom: 1px solid rgb(119, 115, 115);
+}
+.metodos div h2{
+    text-align: center;
+    
+}
+.metodos p {
+    padding:10px;
+    background-color: #f7ead6de;
+    
+}
+
+/* Sobre Nosotros -------------------*/
+.subTitulo{
+    background-color: $colorCream;
+    padding: 5px;
+}
+.imgSobrenos{
+    border-radius: 4%;
+}
+/* Inscripción ----------------------*/
+/* Footer ---------------------------*/
+footer{
+    background-color: #3c4940;
+    display: grid;
+    grid-template-rows: 1fr 1fr;  
+    justify-content: center; 
+    text-align: center;
+}
+footer ul{
+    list-style: none;
+}
+.redes a{
+    text-decoration: none;   
+    color: $colorCream;    
+}
+.redes{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    text-align: center;
+    font-size: 2em;
+}
+.insta:hover{
+    color: rgb(243, 159, 50);
+    transition: all .5s;
+}
+.face:hover{
+    color: rgb(68, 134, 255);
+    
+    transition: all .5s;
+}
+.twit:hover{
+    color: hwb(184 13% 23%);
+    transition: all .5s;
+}
+.navFooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    text-decoration: none;
+    color:$colorCream;
+}
+.aFooterColor{
+    color:$colorCream;
+}
+
+
+@media screen and (min-width:820px) {
+    label{
+        display: none;
+    }
+
+    nav{
+        align-items:center;  
+    }
+    nav ul{
+        position:relative;
+        left:0%;
+        top:0%;
+        height: 90px;
+        background-color: rgba(255, 255, 255, 0);
+        list-style: none;   
+        text-align: center;
+        margin:0px;
+    }
+    nav ul li{
+        display: inline-block;
+        padding: 15px;
+    }
+  
+
+    /* Index Desktop ---------------------------*/
+
+    .slider{
+        height: 400px;
+    }
+    .alumnos{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        align-items: center;
+        margin: 0px 2%;
+    }
+    
+    .alumnos img{    
+        height: 250px;
+        width: 90%;
+    }
+    .filtro{
+        background-color: rgba(195, 233, 91, 0.589);
+    }
+    .filtro{
+        background-color: rgba(195, 233, 91, 0.589);
+    }
+    .planes{
+       
+        grid-template-columns: repeat(3, 1fr);  
+        justify-items: center; 
+        margin: 0 10%;
+        column-gap:5rem;  
+    }
+    
+    .planes a{
+        
+        height: 300px;
+        width: 100%;
+        margin: 50px 0px; 
+        
+        align-items: center;
+        
+        
+        background: url("../imagenes/libros.png");    
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position:center;  
+        text-decoration: none;
+        color:rgb(22, 17, 17);
+        font-size: 1.7em;
+        text-align: center; 
+    }
+    
+    .plan  p{
+        text-align: center;
+        vertical-align: middle;
+        background-color: rgba(175, 127, 68, 0.63);
+        
+    }
+    
+    .contacto p{
+        text-align: center;
+    }
+    
+    .contacto h2{
+        text-align: center;
+        font-size: 2em;
+        padding: 10px;      
+    }
+/* Sedes Desktop ---------------------------*/
+    .sedes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;   
+           
+    }
+       
+    .sedes div img{
+        width: 90%;
+    }
+    .info{
+        display: grid;
+        justify-items: center;
+        padding:50px 0 ;
+        text-align: center;
+    }
+    .info img{
+        height: 300px;
+        width: 100%;
+        border-radius: 15px;
+    }
+    
+    .info p i{
+        margin-right: 15px;
+    }
+    .info a i{
+        margin-right: 15px;
+    }
+    
+    .info button{
+        margin-top: 15px;
+        width: 30%;
+        border:2px;
+        border-radius: 5px;
+        background-color: #000000;
+        color:rgb(255, 255, 255);
+    
+    }
+/* Métodos Desktop ---------------------------*/
+    .metodos{
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-around;
+    }
+    .metodos  div{
+
+        display:grid; 
+        grid-template-columns:.6fr 1fr;
+        margin: 30px;
+        padding-bottom: 30px;
+        align-items: center;
+    }
+    .metodos div h2{
+        display: none;
+    }
+
+}    
+
+
+
+/* Métodos Desktop ---------------------------*/
+/* Sobre nos Desktop ---------------------------*/
+/* Footer Desktop ---------------------------*/
+
+
+@media screen and (max-width:1010px) and (min-width:820px)  {
+
+    .planes a {
+        width: 125%;
+    }
+    .plan{
+        font-size: 0.8em;
+    }
+}
