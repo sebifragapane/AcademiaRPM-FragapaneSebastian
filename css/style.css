@@ -15,6 +15,11 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+nav .logo {
+  height: 100px;
+  padding: 5px;
+  margin-left: 20%;
+}
 nav ul {
   padding-top: 10px;
   position: fixed;
@@ -42,11 +47,6 @@ nav ul a:hover {
 
 #check {
   display: none;
-}
-
-.logo {
-  height: 90px;
-  padding: 5px;
 }
 
 label {
@@ -79,8 +79,16 @@ p {
   height: 600px;
 }
 
+.carousel-caption {
+  background-color: rgba(88, 136, 104, 0.568627451);
+  left: 30%;
+  right: 30%;
+}
+
 .sliderCaption2 {
   margin-bottom: 170px;
+  margin-left: 1%;
+  background-color: rgba(88, 136, 104, 0);
 }
 
 .alumnos div {
@@ -312,9 +320,6 @@ footer .navFooter .aFooterColor {
   .filtro {
     background-color: rgba(195, 233, 91, 0.589);
   }
-  .filtro {
-    background-color: rgba(195, 233, 91, 0.589);
-  }
   .planes {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -335,7 +340,7 @@ footer .navFooter .aFooterColor {
     font-size: 1.7em;
     text-align: center;
   }
-  .plan p {
+  .planes .plan p {
     text-align: center;
     vertical-align: middle;
     background-color: rgba(175, 127, 68, 0.63);
@@ -353,27 +358,24 @@ footer .navFooter .aFooterColor {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .sedes div img {
-    width: 90%;
-  }
-  .info {
+  .sedes .info {
     display: grid;
     justify-items: center;
     padding: 50px 0;
     text-align: center;
   }
-  .info img {
+  .sedes .info img {
+    width: 90%;
     height: 300px;
-    width: 100%;
     border-radius: 15px;
   }
-  .info p i {
+  .sedes .info p i {
     margin-right: 15px;
   }
-  .info a i {
+  .sedes .info a i {
     margin-right: 15px;
   }
-  .info button {
+  .sedes .info button {
     margin-top: 15px;
     width: 30%;
     border: 2px;
