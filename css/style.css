@@ -220,6 +220,7 @@ form .botonForm:hover {
   border-bottom: 1px solid rgb(119, 115, 115);
 }
 .metodosMain .metodos div h2 {
+  margin-top: 20px;
   text-align: center;
 }
 .metodosMain .metodos p {
